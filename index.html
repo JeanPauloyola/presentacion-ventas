@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Ventas</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #1e3c72;
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            padding: 40px;
+        }
+
+        .hero img {
+            width: 90%;
+            max-width: 500px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffcc00;
+            color: #1e3c72;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff9900;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            line-height: 1.8;
+        }
+
+        .container img {
+            width: 90%;
+            max-width: 400px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            nav a {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#tecnicas-venta">Técnicas de Venta</a>
+        <a href="#estrategias">Estrategias</a>
+        <a href="#video">Video</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section class="hero">
+        <img src="https://www.loquequierasya.com/wp-content/uploads/2012/09/aumentar-ventas.jpg" alt="Ventas">
+        <h1>Convierte más clientes con estas técnicas</h1>
+        <p>Descubre estrategias efectivas para mejorar tus ventas y conectar con tus clientes.</p>
+        <a href="#tecnicas-venta" class="btn">Aprender más</a>
+    </section>
+    <div class="container" id="tecnicas-venta">
+        <h1>Técnicas para ser un buen vendedor</h1>
+        <img src="https://economipedia.com/wp-content/uploads/Las-t%C3%A9cnicas-de-venta%E2%80%A6.png"
+            alt="Técnicas de Venta">
+        <ul>
+            <li><strong>Escucha activa:</strong> Comprende las necesidades del cliente antes de ofrecer una solución.
+            </li>
+            <li><strong>Conocimiento del producto:</strong> Domina las características y beneficios de lo que vendes.
+            </li>
+            <li><strong>Construcción de relaciones:</strong> Genera confianza y empatía con los clientes.</li>
+            <li><strong>Manejo de objeciones:</strong> Responde de manera efectiva a las dudas o preocupaciones.</li>
+        </ul>
+    </div>
+    <div class="container" id="estrategias">
+        <h1>Estrategias de Venta</h1>
+        <img src="https://static.semrush.com/blog/uploads/media/5c/b4/5cb49f2ddb02792f562555b453e524f7/estrategia-de-ventas-rrss.jpg"
+            alt="Estrategias de Venta">
+        <ul>
+            <li><strong>Venta consultiva:</strong> Enfócate en entender a fondo al cliente y ofrecer soluciones
+                personalizadas.</li>
+            <li><strong>Upselling y Cross-selling:</strong> Ofrece productos complementarios o mejoras a la compra
+                inicial.</li>
+            <li><strong>Marketing de escasez:</strong> Usa la urgencia y la exclusividad para incentivar decisiones
+                rápidas.</li>
+        </ul>
+    </div>
+    <div class="container" id="video">
+        <h1>Video Recomendado</h1>
+        <p>Mira este video sobre técnicas efectivas de ventas:</p>
+        <iframe width="70%" height="315" src="https://www.youtube.com/embed/H13hSfb1j8k" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+    <footer id="contacto">
+        <p>Contacto: <a href="jeanpauloyolagutierrez@gmail.com">jeanpauloyolagutierrez@gmail.com</a></p>
+        &copy; 2025 - Todos los derechos reservados
+    </footer>
+</body>
+
+</html>
